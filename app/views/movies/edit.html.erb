@@ -1,0 +1,10 @@
+<h1>Edit Movie</h1>
+<%= form_for @movie do |f| %>
+<%= f.label :title %>
+<%= f.text_field :title %>
+<br />
+<%= f.label :rating, "Rating out of 10" %>
+<%= f.number_field :rating %>
+<br />
+<%= f.submit "Update Movie" %>
+<% end %>
